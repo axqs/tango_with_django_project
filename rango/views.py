@@ -4,7 +4,7 @@ from rango.models import Category, Page
 # Create your views here.
 
 def index(request):
-    context_dict = {'boldmessage':"Candy,cake,cookie,cracker,corn!"}
+    context_dict = {'boldmessage':"Candy,cake,cookie,cracker,caramel!"}
     return render(request, 'rango/index.html', context = context_dict)
 
 def about(request):
