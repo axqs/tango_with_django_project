@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+
+<html>
+	<head>
+		<title>About</title>
+    <link rel="stylesheet" href="{% static "css/base.css" %}" />
+    <script src="{% static 'js/jquery.js'  %}"></script>
+  </head>
+
+  <body>
+    <h1>This tutorial has been put together by Q.</h1>
+    <div>
+      Rango says the about page is here.<br />
+      <strong>{{ boldmessage }}</strong><br />
+    </div>
+    <div>
+      <img src="{{ MEDIA_URL }}cat.jpg" alt="It's a cat!" />
+    </div>
+    <div>
+      <a href="/rango/">Index</a><br />
+      <img src="{% static "images/rango2.jpg" %}" alt="Another picture of Rango" />
+    </div>
+  </body>
+</html>

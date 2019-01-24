@@ -53,9 +53,7 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'tango_with_django_project.urls'
-
 MEDIA_ROOT = MEDIA_DIR
-MEDIA_URL = '/media/'
 
 TEMPLATES = [
     {
@@ -126,3 +124,4 @@ STATICFILES_DIRS = [STATIC_DIR, ]
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 
 STATIC_URL = '/static/'
+MEDIA_URL = '/media/'
