@@ -9,10 +9,9 @@ def index(request):
     return render(request, 'rango/index.html', context = context_dict)
 
 def about(request):
-    context_dict = {'boldmessage': "This, is, a, bold, message!",
-                    'aboutmessage': "This tutorial has been put together by Q Smart."
-                    }
-    return render(request, 'rango/about.html', context = context_dict)
+    print(request.method)
+    print(request.user)
+    return render(request, 'rango/about.html', {})
 
 def index(request):
     category_list = Category.objects.order_by('-likes')[:5]
